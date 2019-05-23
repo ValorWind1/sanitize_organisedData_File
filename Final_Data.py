@@ -35,17 +35,20 @@ def neat(time_lap):
 sort functions after organising data , and print 
 """
 
-lewis=readD("Lewis.txt")
+lewis=readD("lewis_hamilton.txt")
 
-max=readD("Max.txt")
+daniel=readD("daniel_ricciardo.txt")
 
-vtl=readD("vettel.txt")
+pierre=readD("pierre_gasly.txt")
+
+vettel=readD("sebastian_vettel.txt")
 
 
 
 print(sorted(set([neat(i) for i in lewis]))[0:3])
-print(sorted(set([neat(i) for i in max]))[0:3])
-print(sorted(set([neat(i) for i in vtl]))[0:3])
+print(sorted(set([neat(i) for i in daniel]))[0:3])
+print(sorted(set([neat(i) for i in pierre]))[0:3])
+print(sorted(set([neat(i) for i in vettel]))[0:3])
 
 
 
